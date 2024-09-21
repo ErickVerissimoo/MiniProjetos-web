@@ -1,0 +1,142 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 20 de ago. de 2024, 17:55:05
+    Author     : Erick 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: "Roboto";
+    
+}
+body{
+    overflow:hidden;
+    background: url("wallpaper.jpg");
+    background-size: cover; 
+}
+
+.input1:focus{
+    outline: none;
+  box-shadow: none;
+}
+.principal{
+    background-color: transparent;
+    backdrop-filter: blur(2.5px);
+    position: absolute;
+    left: 500px;
+    top: 150px;
+    border: 3px groove aqua;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 45px;
+    padding-top: 20px;
+    box-shadow: 8px 8px 15px 7px darkblue;
+}
+
+.entrar{
+    position: relative;
+    
+    left: 130px;
+    top: 35px;
+    font-family: "Roboto";
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.entrar:hover{
+     transform: scale(1.1);
+}
+
+
+
+
+.frase{
+    position: relative;
+    left: 25px;
+}
+
+.input1 {
+    position: relative;
+    bottom: 10px;
+    left: 70px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: transparent;
+    border-bottom-color: blue;
+    
+}
+
+
+
+.email{
+    position: absolute;
+    left: 95px;
+    top: 75px;
+    font-size: 15px;
+    opacity: 90%;
+}
+
+.senha{
+    position: relative;
+    font-size: 15px;
+    opacity: 90%;
+    left: 65px;
+   
+}
+
+form{
+    display: inline-block;
+}
+
+.input2{
+    position: relative;
+    top: 25px;
+    left: 24px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: transparent;
+    border-bottom-color: blue;
+}
+
+.input1:-webkit-autofill, 
+-webkit-autofill:hover,
+-webkit-autofill:focus, 
+-webkit-autofill:active   {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+     -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+      appearance: none !important;
+      outline: none !important;
+      border-left: none !important;
+}
+
+.input2:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.input2:-webkit-autofill,
+.input2:-webkit-autofill:hover,
+.input2:-webkit-autofill:focus,
+.input2:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    outline: none !important;
+    border-left: none !important;
+}
+
+.titulo{
+    position: relative;
+    bottom: 30px;
+}
