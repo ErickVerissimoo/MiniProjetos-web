@@ -1,0 +1,45 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 23 de ago. de 2024, 18:07:51
+    Author     : Erick 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: "Roboto";
+    
+}
+
+body{
+    overflow:hidden;
+    background: url("wallpaper.jpg");
+    background-size: cover; 
+}
+
+.Container{
+    border: 3px groove aqua;
+    display: inline-block;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 580px;
+    border-radius: 20px;
+    top: 200px;
+    background-color: transparent;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    padding-bottom: 40px;
+    box-shadow: 7px 6px 11px 9px darkblue;
+}
+
+.requisicao{
+    position: relative;
+    bottom: -15px;
+    left: 5px;
+    font-size: 22px;
+}
