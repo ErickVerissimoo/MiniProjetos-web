@@ -2,13 +2,14 @@ package servlets;
 
 
 
+import java.io.IOException;
+import java.security.SecureRandom;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.security.SecureRandom;
 
 
 /**
@@ -26,14 +27,14 @@ public final class Home extends HttpServlet {
 		StringBuilder senha = new StringBuilder();
 		SecureRandom aleatorio = new SecureRandom();
 		for(int i = 0; i<5;i++) {
-			senha.append(LOWERCASE.charAt(aleatorio.nextInt(0, LOWERCASE.length())));
+			senha.append(LOWERCASE.charAt((int) aleatorio.nextLong(0, LOWERCASE.length())));
 			
 		}
-		senha.append(UPPERCASE.charAt(aleatorio.nextInt(0, LOWERCASE.length())));
+		senha.append(UPPERCASE.charAt((int) aleatorio.nextLong(0, LOWERCASE.length())));
 		for(int e = 0; e<3;e++) {
-			senha.append(SIMBOLS.charAt(aleatorio.nextInt(0, SIMBOLS.length())));
+			senha.append(SIMBOLS.charAt((int) aleatorio.nextFloat(0, SIMBOLS.length())));
 		}
-		senha.append(NUMBERS.charAt(aleatorio.nextInt(0, NUMBERS.length())));
+		senha.append(NUMBERS.charAt((int) aleatorio.nextFloat(0, NUMBERS.length())));
 		boolean randomico = aleatorio.nextBoolean();
                 if(randomico == true){
                     return senha;
